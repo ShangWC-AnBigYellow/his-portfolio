@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#183d31">
+  <meta name="description" content="从历史文献到数字研究：历史GIS、史料核验、Agent协作与课程开发的个人实践作品集。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' file: data: blob:; script-src 'self' file:; style-src 'self' file: 'unsafe-inline'; img-src 'self' file: data: blob:; connect-src 'none'; font-src 'self' file:; media-src 'self' file: blob:; frame-src 'self' file:; object-src 'none'; base-uri 'self'">
+  <title>从历史文献到数字研究 · 个人作品集</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="史料·地图">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="touch.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="pwa.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="作品集首页"><span class="brand-mark" aria-hidden="true">史</span><span>史料 · 地图 · 方法<small>数字人文个人作品集</small></span></a>
+    <nav aria-label="主导航">
+      <a href="#maps">历史图册</a><a href="#stats">研究统计</a><a href="#agents">Agent协作</a><a href="#vault">知识库</a><a href="#course">WarMap</a>
+      <button class="nav-more" data-action="menu" aria-expanded="false" aria-controls="more-menu">更多 <span aria-hidden="true">＋</span></button>
+    </nav>
+    <div id="more-menu" class="more-menu" hidden><a class="mobile-menu-item" href="#home">首页</a><a class="mobile-menu-item" href="#maps">历史图册</a><a class="mobile-menu-item" href="#stats">研究统计</a><a class="mobile-menu-item" href="#agents">Agent协作</a><a class="mobile-menu-item" href="#vault">知识库</a><a class="mobile-menu-item" href="#course">WarMap</a><a href="#method">史料核验</a><a href="#benchmark">有限对照测试</a><a href="#experience">数字化经历</a><a href="#sources">来源与状态</a><button data-tour="quick">开始90秒展示</button><button data-tour="deep">开始深入参观</button></div>
+  </header>
+  <div id="tour-bar" class="tour-bar" hidden></div>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><span>历史学 × AI Agent × 历史 GIS</span><span>资料快照 2026.10.31 <i>·</i> 网站核查 2026.11.01 <i>·</i> <a href="#sources">证据与展示边界</a></span></footer>
+  <dialog id="evidence-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><span class="eyebrow">资料与核验</span><button data-action="close-dialog" class="icon-button" aria-label="关闭资料窗口">×</button></div><div id="dialog-body"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><div class="noscript">此作品集需要启用JavaScript。所有数据和图片均保存在本地，无需账号或外部API。</div></noscript>
+</body>
+</html>

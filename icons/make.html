@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>App icon source</title>
+<style>
+  html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
+  body{
+    background:#183d31;
+    display:grid;place-items:center;
+    font-family:"Songti SC","STSong","SimSun",serif;
+  }
+  .frame{
+    position:absolute;inset:0;
+    border:calc(2.4vmin) solid #0f2a21;
+    box-shadow:inset 0 0 0 calc(0.5vmin) #c7a86a55;
+    box-sizing:border-box;
+  }
+  .mark{
+    color:#f4eddf;
+    font-size:52vmin;
+    line-height:1;
+    letter-spacing:0;
+    text-align:center;
+    transform:translateY(-3vmin);
+    text-shadow:0 0.6vmin 1.6vmin #00000033;
+  }
+  .rule{
+    position:absolute;
+    left:50%;bottom:19vmin;transform:translateX(-50%);
+    width:34vmin;height:0.55vmin;background:#c7a86a;
+  }
+  .maskable .frame{border:0;box-shadow:none;}
+  .maskable .mark{font-size:40vmin;transform:none;}
+  .maskable .rule{bottom:30vmin;width:26vmin;}
+</style>
+</head>
+<body>
+<div class="frame"></div>
+<div class="mark">史</div>
+<div class="rule"></div>
+<script>
+  if (location.search.indexOf('maskable') >= 0) document.body.classList.add('maskable');
+</script>
+</body>
+</html>

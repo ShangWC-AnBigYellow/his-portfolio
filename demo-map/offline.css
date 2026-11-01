@@ -1,0 +1,25 @@
+/* Offline (Natural Earth) basemap presentation. Kept separate so the Kimi-derived
+   course.css / upgrade.css stay close to their originals. */
+.wm-offline-label{
+  background:#f8f5ecf2!important;
+  border:1px solid #8b9a86!important;
+  color:#22392e!important;
+  font:11px/1.4 "PingFang SC","Microsoft YaHei",system-ui,sans-serif!important;
+  padding:1px 5px!important;
+  border-radius:3px!important;
+  box-shadow:0 1px 5px #1b3a2a22!important;
+  white-space:nowrap!important;
+}
+.wm-offline-label::before{display:none!important;}
+.wm-map[data-basemap="natural-earth"]{background:#0b1512;}
+.wm-map[data-map-state="offline-basemap"] .wm-status{
+  border-color:#7f9377!important;
+  background:#f3f6ecf2!important;
+  color:#27493a!important;
+}
+.wm-map[data-map-state="offline-basemap"] .leaflet-control-attribution{
+  background:#f8f5ece8!important;color:#2c4738!important;
+}
+@media(max-width:650px){
+  .wm-offline-label{font-size:10px!important;padding:0 4px!important;}
+}

@@ -1,0 +1,15 @@
+/* Tablet touch refinements (loaded after style.css): every interactive element keeps a
+   comfortable hit area on coarse-pointer devices without changing the desktop layout. */
+@media (pointer: coarse) {
+  .site-footer a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+    padding: 0 6px;
+    margin: -14px -6px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .map-thumb { min-height: 44px; }
+  .source-link, .text-link { min-height: 40px; }
+}

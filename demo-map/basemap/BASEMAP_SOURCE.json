@@ -1,0 +1,58 @@
+{
+ "generated": "2026-11-01T06:29:10.461Z",
+ "source": "Natural Earth (public domain)",
+ "layers": [
+  {
+   "name": "ne_110m_coastline",
+   "features": 134,
+   "cache": true,
+   "kind": "world-coastline"
+  },
+  {
+   "name": "ne_50m_coastline",
+   "features": 1428,
+   "segmentsKept": 307,
+   "points": 6874,
+   "cache": true,
+   "kind": "coast"
+  },
+  {
+   "name": "ne_50m_admin_0_boundary_lines_land",
+   "features": 390,
+   "segmentsKept": 84,
+   "points": 2509,
+   "cache": true,
+   "kind": "border"
+  },
+  {
+   "name": "ne_50m_rivers_lake_centerlines",
+   "features": 462,
+   "segmentsKept": 183,
+   "points": 3799,
+   "cache": true,
+   "kind": "river"
+  },
+  {
+   "name": "ne_50m_land",
+   "features": 1420,
+   "rings": 144,
+   "points": 4659,
+   "sliversDropped": 158,
+   "cache": true,
+   "kind": "land"
+  },
+  {
+   "name": "ne_50m_lakes",
+   "lakesKept": 69,
+   "cache": true,
+   "kind": "lake"
+  },
+  {
+   "name": "ne_50m_populated_places",
+   "cities": 160,
+   "cache": true,
+   "nameField": "NAME_ZH",
+   "kind": "cities"
+  }
+ ]
+}

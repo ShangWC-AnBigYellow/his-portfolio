@@ -1,0 +1,25 @@
+{
+  "name": "从历史文献到数字研究 · 个人作品集",
+  "short_name": "史料·地图",
+  "description": "厦门大学历史学本科生的数字人文作品集：北宋军事史 GIS 地图、史料核验、Agent 协作、Obsidian 知识库与 WarMap 课程项目。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "minimal-ui"],
+  "orientation": "landscape",
+  "background_color": "#f4eddf",
+  "theme_color": "#183d31",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "历史图册", "url": "./index.html#maps" },
+    { "name": "WarMap 交互地图", "url": "./demo-map/index.html" },
+    { "name": "Agent 有限对照", "url": "./index.html#benchmark" }
+  ]
+}
